@@ -82,9 +82,7 @@ export default function makeKeyboardNavigable(
 
 function scrollAndSelect(selectedItem, selectedClass, items) {
   if (selectedItem) {
-
     selectedItem.scrollIntoView({ block: "nearest", behavior: "smooth" });
-
     selectedItem.classList.add(selectedClass);
     if (items.includes(document.activeElement)) {
       selectedItem.focus();
